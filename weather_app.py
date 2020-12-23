@@ -1,7 +1,6 @@
 import requests
 from tkinter import *
 from tkinter import messagebox
-from tkinter.font import BOLD
 from configparser import ConfigParser
 
 url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
@@ -61,7 +60,7 @@ city_entry.pack() # pack a function like blit in pygame to display text on scree
 search_btn = Button(app, text='Search weather', width=12, command=search)
 search_btn.pack()
 
-location_lbl = Label(app, text='', font=('Times New Roman', 15, BOLD))
+location_lbl = Label(app, text='', font=('Times New Roman', 15))
 location_lbl.pack()
 
 image = Label(app, bitmap='')
